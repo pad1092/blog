@@ -3,11 +3,15 @@
 :root {
     --text-color: #292f37;
     --text-light: #9d9d9d;
+    --text-grey: #6d6d6d;
+
     --bg-hover: #dedede;
     --bg-color: #f7f7f7;
     --grey-color: #eeee;
     --boder-color: #e3e3e3ee;
     --scroll-bar-lv2: #c3c3c3;
+
+    --selector-color: #2C74B3;
     font-size: 16px;
 }
 
@@ -17,7 +21,10 @@
     box-sizing: border-box;
     padding: 0;
 }
-
+::selection{
+    color: white;
+    background: var(--selector-color);
+}
 body {
     color: var(--text-color);
     background-color: var(--bg-color);
@@ -67,6 +74,8 @@ body {
 
 .nav-item {
     position: relative;
+    padding-bottom: 2px;
+    text-transform: capitalize;
 }
 
 .nav-item::after {
@@ -112,7 +121,7 @@ body {
     flex-direction: column;
     align-items: center;
     float: right;
-    padding: 6px 0;
+    padding: 8px 0;
     width: calc(100% - 30px);
     background-color: var(--bg-color);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 4px 4px;
@@ -123,7 +132,9 @@ body {
     top: calc(100% + 2px);
     /* right: 15px; */
 }
-
+.drop-down-menu > li {
+    padding: 4px 0;
+}
 .drop-down-menu.open {
     display: flex;
 }
@@ -230,7 +241,6 @@ body {
 .marquee {
     --duration: 15s;
     --gap: 2rem;
-
     display: flex;
     overflow: hidden;
     user-select: none;
@@ -246,8 +256,6 @@ body {
     min-width: 100%;
     animation: scroll var(--duration) linear infinite;
 }
-
-
 
 @keyframes scroll {
     0% {
