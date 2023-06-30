@@ -6,7 +6,8 @@
     --text-grey: #6d6d6d;
 
     --bg-hover: #dedede;
-    --bg-color: #f7f7f7;
+    /* --bg-color: #f7f7f7; */
+    --bg-color: rgb(245, 242, 231);
     --grey-color: #eeee;
     --boder-color: #e3e3e3ee;
     --scroll-bar-lv2: #c3c3c3;
