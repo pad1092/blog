@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/prism.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="" id="xnxx" style="width: 70%;">
+  </div>
+  <script src="./assets/js/import/prism.js"></script>
+  <script>document.querySelector("#xnxx").innerHTML = 
+`<pre class="language-java"><code>// Một interface cho việc ăn mặc
+public interface Outfit {
+  public void wear();
+}
+
+// Một object cấp thấp, implement của Outfits
+public class Bikini implements Outfit {
+  public void wear() {
+    System.out.println("Đ&atilde; mặc Bikini");
+  }
+}
+
+// B&acirc;y giờ Girl chỉ phụ thuộc v&agrave;o Outfit. nếu muốn thay đổi đồ của c&ocirc; g&aacute;i, ch&uacute;ng ta chỉ cần cho Outfit một thể hiện mới.
+public class Girl{
+    private Outfit outfit;
+    public Girl(){
+      outfit = new Bikini();
+    }
+}</code></pre>
+<p><strong>PHAM ANH DUC</strong></p>`
+  </script>
+</body>
+
+</html>

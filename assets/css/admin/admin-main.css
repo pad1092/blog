@@ -31,6 +31,19 @@ body {
     color: var(--text-color);
     background-color: var(--bg-sec-color);
 }
+/* COMMON */
+.f-w-bold{
+    font-weight: 600;
+}
+.ico-sm{
+    width: 10px;
+}
+.fs-ssm{
+    font-size: 0.8rem;
+}
+.text-grey{
+    color: var(--text-grey);
+}
 .header{
     /* height: 30px; */
     background-color: var(--bg-color);
@@ -66,6 +79,8 @@ body {
 /* -----------BODY----------- */
 .main{
     height: calc(100vh - 68px);
+    position: fixed;
+    width: 100vw;
 }
 .pannel{
     width: 0;
@@ -89,14 +104,14 @@ body {
 }
 .pannel-item {
     font-size: 1.1rem;
-    font-weight: 600;
     color: var(--text-light);
     position: relative;
     cursor: pointer;
     user-select: none;
 }
 .pannel-item_title{
-    display: block;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
     padding: 8px 0;
@@ -119,9 +134,15 @@ body {
 .pannel-item_child > .pannel-item{
     font-size: 1.05rem;
 }
+.arrow-icon {
+    display: none;
+    width: 12px;
+}
+.arrow-icon.open{
+    display: inline-block !important;
+}
 /* CONTEN */
 .content{
-    padding: 20px;
     height: 100%;
     background-color: var(--bg-color);
     box-shadow: rgba(0, 0, 0, 0.15) -2px 0 4px;

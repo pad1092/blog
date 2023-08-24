@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/admin/admin-main.css">
+    <link rel="stylesheet" href="../assets/css/admin/admin-create-post.css">
+    <title>ADMIN - Create Post</title>
+</head>
+
+<body>
+    <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+    <div class="header">
+        <div class="left">
+            <img class="logo" src="../assets/img/logo.svg" alt="">
+            <img class="menu-toggle" src="../assets/img/themify-icon/menu.svg" alt="">
+        </div>
+        <div class="right">
+            <div class="avatar"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="pannel pannel_open" id="pannel">
+            <div class="pannel-list-wrapper">
+                <ul class="pannel-list">
+                    <li class="pannel-item" onclick="redirect('dashboard.html')">
+                        <span class="pannel-item_title">Dashboard</span>
+                    </li>
+                    <li class="pannel-item active">
+                        <div class="pannel-item_title">
+                            Bài viết
+                            <img src="../assets/img/themify-icon/angle-right.svg" alt="" class="arrow-icon">
+                            <img src="../assets/img/themify-icon/angle-down.svg" alt="" class="arrow-icon open">
+                        </div>
+
+                        <ul class="pannel-item_child open">
+                            <li class="pannel-item" onclick="redirect('post.html')">
+                                <span class="pannel-item_title">Quản lý</span>
+                            </li>
+                            <li class="pannel-item active" onclick="redirect('/create-post.html')">
+                                <span class="pannel-item_title">Thêm bài viết</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="pannel-item">
+                        <div class="pannel-item_title">
+                            Danh mục
+                            <img src="../assets/img/themify-icon/angle-right.svg" alt="" class="arrow-icon open">
+                            <img src="../assets/img/themify-icon/angle-down.svg" alt="" class="arrow-icon">
+                        </div>
+                        <ul class="pannel-item_child">
+                            <li class="pannel-item" onclick="redirect('category.html')">
+                                <span class="pannel-item_title">Quản lý</span>
+                            </li>
+                            <li class="pannel-item" onclick="redirect('create-category.html')">
+                                <span class="pannel-item_title">Thêm danh mục</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content content_expand" id="content">
+            <div id="content-wrapper" class="w-100 h-100 d-flex justify-content-between align-items-center">
+                <div id="artile-region" class="">
+                    <div id="artile-region_header" class="mb-4">
+                        <div class="w-100 py-1">
+                            <input class="form-control input f-w-bold rounded-0" type="text" placeholder="Article's title">
+                        </div>
+                        <div class="w-100 py-1 d-flex justify-content-between">
+                            <div class="d-inline-block">
+                                <span class="m-0 p-0 d-inline-block f-w-bold">Path: </span>
+                                <span id="article-url" class="text-primary">/tutorial/java-core/varagrs-java</span>
+                            </div>
+                            <div class="d-inline-block">
+                                <span class="btn btn-sm btn-outline-dark p-0 rounded-0 py-0 px-2">Edit</span>
+                                <span class="btn btn-sm btn-outline-dark p-0 rounded-0 py-0 px-2">Add media</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="artile-region_main">
+                        <form class="form">
+                            <textarea id="article-editor"></textarea>
+                        </form>
+                    </div>
+                </div>
+                <div id="infor-region" class="my-1"> 
+                    <div class="article-action">
+                        <button class="btn btn-success w-100 my-1" id="btn-publish">
+                            Publish
+                        </button>
+                        <button class="btn btn-primary w-100 my-1" id="btn-save">
+                            Save
+                        </button>
+                        <div class="article-infor mt-2">
+                            <div class="text-grey">
+                                <span class="f-w-bold w-25 d-inline-block">Created</span>
+                                <span id="article-infor_created">23/08/2023 11:00 AM</span>
+                            </div>
+                            <div class="text-grey">
+                                <span class="f-w-bold w-25 d-inline-block">Author</span>
+                                <span id="article-infor_author">DucPA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article-category" class="my-4">
+                        <h6 class="f-w-bold">Category</h6>
+                        <div class=" d-flex justify-content-between align-items-center">
+                            <input type="text" class="form-control d-inline-block rounded-0 w-75" placeholder="Search">
+                            <button class="btn btn-outline-dark d-inline-block rounded-0 m-0 w-25">Add</button>
+                        </div>
+                    </div> 
+                    <div id="article-tag" class="my-4">
+                        <h6 class="f-w-bold">Tags</h6>
+                        <div class=" d-flex justify-content-between align-items-center">
+                            <input type="text" class="form-control d-inline-block rounded-0 w-75" placeholder="Search">
+                            <button class="btn btn-outline-dark d-inline-block rounded-0 m-0 w-25">Add</button>
+                        </div>
+                        <div class=""></div>
+                        <div class="list-tag btn p-0 fs-ssm mr-2">
+                            <span class="font-italic">Java</span>
+                        </div>
+                        <div class="list-tag btn p-0 fs-ssm mr-2">
+                            <span class="font-italic">Course</span>
+                        </div>
+                        <div class="list-tag btn p-0 fs-ssm mr-2">
+                            <span class="font-italic">Tag</span>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/tinymce/tinymce.min.js"></script>
+    <script src="../assets/js/import/jquery-3.7.0.min.js"></script>
+    <script src="../assets/js/admin/admin-main.js"></script>
+    <script src="../assets/js/admin/admin-create-post.js"></script>
+</body>
+
+</html>

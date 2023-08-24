@@ -7,7 +7,8 @@
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/admin/admin-main.css">
-    <title>ADMIN - Bài viết</title>
+    <link rel="stylesheet" href="../assets/css/admin/admin-create-post.css">
+    <title>ADMIN - Create Post</title>
 </head>
 
 <body>
@@ -25,35 +26,36 @@
         <div class="pannel pannel_open" id="pannel">
             <div class="pannel-list-wrapper">
                 <ul class="pannel-list">
-                    <li class="pannel-item active">
+                    <li class="pannel-item active" onclick="redirect('dashboard.html')">
                         <span class="pannel-item_title">Dashboard</span>
                     </li>
                     <li class="pannel-item">
-                        <span class="pannel-item_title">Bài viết</span>
+                        <div class="pannel-item_title">
+                            Bài viết
+                            <img src="../assets/img/themify-icon/angle-right.svg" alt="" class="arrow-icon open">
+                            <img src="../assets/img/themify-icon/angle-down.svg" alt="" class="arrow-icon">
+                        </div>
+
                         <ul class="pannel-item_child">
-                            <li class="pannel-item">
-                                <span class="pannel-item_title">Tất cả bài viết</span>
+                            <li class="pannel-item" onclick="redirect('post.html')">
+                                <span class="pannel-item_title">Quản lý</span>
                             </li>
-                            <li class="pannel-item">
+                            <li class="pannel-item" onclick="redirect('create-post.html')">
                                 <span class="pannel-item_title">Thêm bài viết</span>
-                                <ul class="pannel-item_child">
-                                    <li class="pannel-item">
-                                        <span class="pannel-item_title">Tất cả bài viết</span>
-                                    </li>
-                                    <li class="pannel-item">
-                                        <span class="pannel-item_title">Thêm bài viết</span>
-                                    </li>
-                                </ul>
                             </li>
                         </ul>
                     </li>
                     <li class="pannel-item">
-                        <span class="pannel-item_title">Danh mục</span>
+                        <div class="pannel-item_title">
+                            Danh mục
+                            <img src="../assets/img/themify-icon/angle-right.svg" alt="" class="arrow-icon open">
+                            <img src="../assets/img/themify-icon/angle-down.svg" alt="" class="arrow-icon">
+                        </div>
                         <ul class="pannel-item_child">
-                            <li class="pannel-item">
-                                <span class="pannel-item_title">Tất cả danh mục</span>
+                            <li class="pannel-item" onclick="redirect('category.html')">
+                                <span class="pannel-item_title">Quản lý</span>
                             </li>
-                            <li class="pannel-item">
+                            <li class="pannel-item" onclick="redirect('create-category.html')">
                                 <span class="pannel-item_title">Thêm danh mục</span>
                             </li>
                         </ul>
