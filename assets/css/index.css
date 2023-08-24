@@ -28,48 +28,57 @@
     animation-fill-mode: forwards;
 }
 
-.under {
-    fill: #ffffff;
-    opacity: 1;
-    animation-fill-mode: forwards;
-}
-
-.line {
-    fill: none;
-    stroke-width: 1;
-    stroke: rgb(78, 78, 78);
-    stroke-dasharray: 1800;
-    stroke-dashoffset: 1800;
-    animation: line 6s ease-in-out infinite;
-    animation-fill-mode: forwards;
-}
-
-.new-vector{
-    fill: none;
-    stroke-width: 1;
-    stroke: rgb(78, 78, 78);
-    stroke-dasharray: 2000;
-    stroke-dashoffset: 2000;
-    animation: line 8s ease-in-out infinite;
-}
 .java-vec{
-    stroke-width: 1;
-    stroke: rgb(255, 206, 150);
+    stroke-width: 0.6;
+    stroke: rgb(214, 114, 0);
+    fill: rgb(30.588235%,47.058824%,58.823529%) ;
     stroke-dasharray: 500;
     stroke-dashoffset: 500;
     animation: line 8s ease-in-out infinite;
 }
 .fire-vec{
-    stroke-width: 1;
-    stroke: rgb(2, 85, 153);
+    stroke-width: 0.5;
+    stroke: var(--color-blue);
+    fill:  var(--color-orange);
     stroke-dasharray: 500;
     stroke-dashoffset: 500;
     animation: line 8s ease-in-out infinite;
+}
+
+.new-vector{
+    fill: var(--color-blue);
+    stroke-width: 0.8;
+    stroke: var(--color-orange);
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: line 4s ease-in-out infinite;
+}
+
+.spring-vec{
+    fill: #77bc1f;
+    stroke-width: 5;
+    stroke: var(--color-orange);
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: line 3s ease-in-out infinite;
 }
 .thumbnail-wrapper{
     display: flex;
     justify-content: center;
     align-items: center
+}
+.article-item > a{
+    display: inline-block; 
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    font-size: 1.3rem;
+    color: var(--color-blue);
+    text-transform: capitalize;
+}
+.article-item {
+
 }
 @keyframes line {
     to {

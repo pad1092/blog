@@ -37,16 +37,24 @@ body {
     background-color: var(--bg-color);
 }
 
+/* border */
+._border-bot{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
+}
+
 .f-w-bold {
     font-weight: 600;
 }
 
 .shadow-b {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1)
 }
 .text-orange{
     color: var(--color-orange);
 }
 .text-blue{
     color: var(--color-blue);
+}
+.text-pri{
+    color: var(--text-color)
 }
