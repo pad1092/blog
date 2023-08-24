@@ -12,13 +12,13 @@
     top: 0;
     z-index: 30;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0px 4px;
-    background-color: var(--bg-color);
-    backdrop-filter: opacity(0.5);
+    background-color: var(--color-blue);
+    backdrop-filter: opacity(0.5);   
 }
 
 .header a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-white);
     padding: 0;
     font-size: 1.1rem;
     font-weight: 400;
@@ -91,7 +91,7 @@
     float: right;
     padding: 8px 0;
     width: calc(100% - 30px);
-    background-color: var(--bg-color);
+    background-color: var(--color-blue);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 4px 4px;
     animation: growDown .14s ease-in-out forwards;
     transform-origin: top;

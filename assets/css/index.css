@@ -61,7 +61,7 @@
 }
 .fire-vec{
     stroke-width: 1;
-    stroke: rgb(88, 122, 150);
+    stroke: rgb(2, 85, 153);
     stroke-dasharray: 500;
     stroke-dashoffset: 500;
     animation: line 8s ease-in-out infinite;
