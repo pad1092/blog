@@ -48,7 +48,7 @@
     stroke-width: 6;
     stroke: var(--color-orange);
     stroke-dasharray: 1000;
-    stroke-dashoffset: 3000;
+    stroke-dashoffset: 4000;
     animation: spring 3s ease-in-out infinite;
 }
 
