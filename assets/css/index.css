@@ -48,8 +48,8 @@
     stroke-width: 6;
     stroke: var(--color-orange);
     stroke-dasharray: 1000;
-    stroke-dashoffset: 2000;
-    animation: spring 2s ease-in-out infinite;
+    stroke-dashoffset: 1000;
+    animation: spring 3s ease-in-out infinite;
 }
 
 .line-vec{
@@ -67,6 +67,7 @@
     animation: line 2s ease-in-out infinite;
 }
 .thumbnail-wrapper{
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center
@@ -92,7 +93,7 @@
 }
 @keyframes spring {
     to {
-        stroke-dashoffset: 6000;
+        stroke-dasharray: 4000;
         stroke-dashoffset: 0;
     }
 }
