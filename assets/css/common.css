@@ -28,7 +28,7 @@
 }
 
 ::selection {
-    color: white;
+    color: var(--text-white);
     background: var(--selector-color);
 }
 
