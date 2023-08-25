@@ -47,7 +47,7 @@ body {
 }
 
 .shadow-b {
-    border: 1px solid rgba(0, 0, 0, 0.1)
+    border: 1px solid rgba(0, 0, 0, 0.05)
 }
 .text-orange{
     color: var(--color-orange);
