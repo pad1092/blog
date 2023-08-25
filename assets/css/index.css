@@ -53,14 +53,14 @@
 }
 
 .line-vec{
-    stroke-width: 10;
+    stroke-width: 8;
     stroke: var(--color-blue);
     stroke-dasharray: 2000;
     stroke-dashoffset: 800;
     animation: line 2s ease-in-out infinite;
 }
 .line1-vec{
-    stroke-width: 10;
+    stroke-width: 12;
     stroke: var(--color-orange);
     stroke-dasharray: 2000;
     stroke-dashoffset: 800;
