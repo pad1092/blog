@@ -33,6 +33,69 @@
 }
 
 
+/* 
+Lastest Article List
+*/
+.article-item_wrapper{
+    padding: 20px 24px;
+    box-shadow: rgba(60, 64, 67, 0.1) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.text-display{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.article-item_content-title{
+    color: var(--text-color);
+    height: 120px;
+    text-align: justify;
+    margin-bottom: 4px;
+    -webkit-line-clamp: 5;
+}
+.article-item_content-title:hover{
+    text-decoration: none !important;
+    color: var(--color-blue);
+}
+.article-thumb{
+    transition: transform .5s ease 0s;
+}
+.article-thumb:hover{
+    transform: scaleX(102%) scaleY(102%);
+}
+
+/* -------ANIMATION------- */
+
+@keyframes java {
+    to {
+        stroke-dashoffset: 1000;
+    }
+}
+
+@keyframes spring {
+    to {
+        stroke-dasharray: 4000;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes line {
+    to {
+        stroke-dashoffset: 4000;
+    }
+}
+
+.running-line {
+    position: absolute;
+    top: 0;
+    left: -2px;
+    /* Adjust this value to align the line properly */
+    width: 4px;
+    height: 100%;
+    background-color: #ff0000;
+    animation: runLine 4s linear infinite;
+}
 .java-vec {
     stroke-width: 0.6;
     stroke: rgb(214, 114, 0);
@@ -91,78 +154,6 @@
     justify-content: center;
     align-items: center
 }
-
-/* 
-Lastest Article List
-*/
-
-.article-item{
-    display: flex;
-    max-height: 200px;
-    margin-bottom: 23px;
-    width: fit-content;
-    padding: 0;
-}
-.article-thumb_wrap{
-    padding-top: 6px;
-    margin-right: 12px;
-}
-.article-thumb{
-    height: 100%;
-}
-
-.article-item_content{
-    min-width: calc(100% - 294px - 24px);
-}
-.text-display{
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    white-space: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.article-item_content-title{
-    margin-bottom: 4px;
-    max-height: 80px;
-    -webkit-line-clamp: 3;
-}
-.article-item_content-brief{
-    margin-bottom: 0;
-    max-height: 120px;
-    -webkit-line-clamp: 5;
-}
-/* -------------- */
-
-@keyframes java {
-    to {
-        stroke-dashoffset: 1000;
-    }
-}
-
-@keyframes spring {
-    to {
-        stroke-dasharray: 4000;
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes line {
-    to {
-        stroke-dashoffset: 4000;
-    }
-}
-
-.running-line {
-    position: absolute;
-    top: 0;
-    left: -2px;
-    /* Adjust this value to align the line properly */
-    width: 4px;
-    height: 100%;
-    background-color: #ff0000;
-    animation: runLine 4s linear infinite;
-}
-
 @keyframes runLine {
     0% {
         transform: translateY(0);
