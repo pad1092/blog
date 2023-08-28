@@ -28,7 +28,7 @@
     background: rgb(255, 255, 255);
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 17%, rgba(240, 240, 240, 1) 100%);
 }
-.thumbnail-wrapper:hover {
+.thumbnail-wrapper:hover{
     transform: scaleX(103%) scaleY(103%);
 }
 
@@ -45,7 +45,6 @@ Lastest Article List
 }
 .article-item_content-title{
     color: var(--text-color);
-    text-align: justify;
     margin-bottom: 4px;
     -webkit-line-clamp: 4;
 }
@@ -53,11 +52,15 @@ Lastest Article List
     text-decoration: none !important;
     color: var(--color-blue);
 }
+.article-thumb-wrapper{
+    border-radius: 8px;
+    overflow: hidden;
+}
 .article-thumb{
-    transition: transform .5s ease 0s;
+    transition: transform .3s ease 0s;
 }
 .article-thumb:hover{
-    transform: scaleX(102%) scaleY(102%);
+    transform: scaleX(104%) scaleY(104%);
 }
 
 /* -------ANIMATION------- */

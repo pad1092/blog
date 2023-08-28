@@ -37,6 +37,7 @@ a:hover{
 body {
     color: var(--text-color);
     background-color: var(--bg-color);
+    scroll-behavior: smooth;
 }
 
 /* border */

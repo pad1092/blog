@@ -4,7 +4,10 @@
     padding: 0 15px;
     margin: auto
 }
-
+html {
+    scroll-padding-top: 60px;
+    scroll-behavior: smooth;
+}
 
 /* -------HEADER---------- */
 #header {
@@ -254,8 +257,13 @@
     .footer-wrapper {
         max-width: 1400px;
     }
+    
 }
-
+@media screen and (min-width: 992px){
+    .container{
+        max-width: 900px !important;
+    }
+}
 @keyframes line-in {
     0% {
         width: 0;
